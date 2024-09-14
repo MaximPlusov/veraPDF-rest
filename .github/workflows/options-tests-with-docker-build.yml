@@ -38,8 +38,6 @@ jobs:
 
           sudo apt-get install python3 -y
           sudo apt-get install python3-pip -y
-          
-          sudo apt-get install bash -y
 
           sudo pip install junit2html
 
