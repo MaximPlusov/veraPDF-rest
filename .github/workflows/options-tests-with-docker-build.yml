@@ -1,6 +1,7 @@
 name: Options tests with docker build
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: "05 09 * * 1"
   push:
@@ -9,7 +10,6 @@ on:
 
 jobs:
   build:
-    if: github.repository == 'veraPDF/veraPDF-rest'
     runs-on: ubuntu-latest
 
     steps:
@@ -38,6 +38,8 @@ jobs:
 
           sudo apt-get install python3 -y
           sudo apt-get install python3-pip -y
+          
+          sudo apt-get install bash -y
 
           sudo pip install junit2html
 
