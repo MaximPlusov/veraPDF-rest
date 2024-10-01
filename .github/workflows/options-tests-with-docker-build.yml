@@ -15,4 +15,4 @@ jobs:
 
       - name: Build and run Docker Image
         run: |
-          echo ${${{ github.ref_name }}##*.}
+          echo ${${ github.ref_name }##*.}
