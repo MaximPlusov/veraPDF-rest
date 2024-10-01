@@ -3,7 +3,7 @@ name: Options tests with docker build
 on:
   push:
     tags:
-      - v1*
+      - v*
 
 jobs:
   build:
